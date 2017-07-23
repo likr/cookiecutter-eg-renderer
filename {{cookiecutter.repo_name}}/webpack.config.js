@@ -7,8 +7,6 @@ const options = {
     ]
   },
   entry: {
-    'eg-renderer': 'eg-renderer',
-    'eg-renderer-ogdf': 'eg-renderer-ogdf',
     bundle: './src/index'
   },
   output: {
