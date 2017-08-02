@@ -5,11 +5,11 @@ Project template for EgRenderer
 
 Requirements
 ------------
-Install `cookiecutter` command line: `pip install cookiecutter`    
+Install `cookiecutter` command line: `pip install cookiecutter`
 
 Usage
 -----
-Generate a new Cookiecutter template layout: `cookiecutter gh:likr/cookiecutter--eg-renderer`    
+Generate a new Cookiecutter template layout: `cookiecutter gh:likr/cookiecutter-eg-renderer`
 
 License
 -------
