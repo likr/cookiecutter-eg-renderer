@@ -15,9 +15,8 @@
   },
   "dependencies": {
     "@webcomponents/custom-elements": "^1.0.0",
-    "d3": "^4.10.0",
-    "eg-renderer": "git+https://github.com/likr/eg-renderer-canvas.git",
-    "eg-renderer-ogdf": "git+https://github.com/likr/eg-renderer-ogdf.git"
+    "eg-renderer": "1.0.0-beta.6",
+    "eg-renderer-ogdf": "1.0.0-beta.6"
   },
   "devDependencies": {
     "gh-pages": "^1.0.0",
