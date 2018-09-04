@@ -1,5 +1,4 @@
 const path = require('path')
-const webpack = require('webpack')
 
 const options = {
   module: {
@@ -13,34 +12,18 @@ const options = {
     path: path.resolve(__dirname, 'public'),
     filename: '[name].js'
   },
-  externals: {
-  },
   plugins: [
   ],
-  resolve: {
-    extensions: ['.js']
-  },
   devServer: {
     contentBase: path.join(__dirname, 'public'),
     historyApiFallback: true,
     port: {{cookiecutter.dev_port}}
   },
   node: {
+    crypto: 'empty',
+    path: 'empty',
     fs: 'empty'
   }
 }
 
-if (process.env.NODE_ENV === 'production') {
-  options.plugins.push(new webpack.optimize.UglifyJsPlugin({
-    compress: {
-      warnings: false
-    }
-  }))
-} else {
-  Object.assign(options, {
-    devtool: 'inline-source-map'
-  })
-}
-
 module.exports = options
-
